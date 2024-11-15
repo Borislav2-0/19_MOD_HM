@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>{{ error }}</h2>
+    <h2>{{ message }}</h2>
+    <form method="post">
+        {% csrf_token %}
+        <label for="username">Введите логин:</label>
+        <input type="text" id="username" name="username" maxlength="30" required>
+
+        <label for="password">Введите пароль:</label>
+        <input type="text" id="password" name="password" maxlength="8" required>
+
+        <label for="repeat_password">Повторите пароль:</label>
+        <input type="text" id="repeat_password" name="repeat_password" maxlength="8" required>
+
+        <label for="age">Введите свой возраст:</label>
+        <input type="int" id="age" name="age" maxlength="3" required>
+
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+</body>
+</html>
+
+
+<!--Должен содержать форму с полями для ввода и кнопку для её отправки.-->
+<!--Поля для ввода и подписи:-->
+<!--Для логина username с ограничением длины в 30 символов. Подпись: "Введите логин".-->
+<!--Для пароля password с ограничением длины не менее 8 символов. Подпись: "Введите пароль".-->
+<!--Для повтора пароля repeat_password с ограничением длины не менее 8 символов. Подпись: "Повторите пароль".-->
+<!--Для возраста age с ограничением длины в 3 символа. Подпись: "Введите свой возраст".-->
