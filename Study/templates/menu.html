@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Столярная мастерская Бирюка</title>
+</head>
+<body>
+        {% block menu %}
+        <ul>
+            <li><a href="/main_page"><h2>Главная</h2></a></li>
+            <li><a href="http://127.0.0.1:8000/shop_page"><h2>Перечень товаров</h2></a></li>
+            <li><a href="http://127.0.0.1:8000/basket_page"><h2>Твоя корзина</h2></a></li>
+        </ul>
+        {% endblock %}
+
+        {% block pagename %}{% endblock %}
+
+        {% block content %}{% endblock %}
+
+</body>
+</html>
